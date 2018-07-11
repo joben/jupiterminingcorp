@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/chhunchha/simplemeanapp#readme",
   "dependencies": {
+    "applicationinsights": "^1.0.3",
     "assert": "^1.4.1",
-    "azure-arm-keyvault": "^1.1.2",
     "body-parser": "^1.15.1",
     "consolidate": "^0.14.1",
     "express": "^4.13.4",

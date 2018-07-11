@@ -5,7 +5,10 @@ var express = require('express'),
     engines = require('consolidate'),
     assert = require('assert'),
     ObjectId = require('mongodb').ObjectID,
-    url = 'mongodb://localhost:27017/simplemean';
+    url = 'mongodb://localhost:27017/simplemean',
+    appInsights = require('applicationinsights');
+
+appInsights.setup().start();
 
 app.use(express.static(__dirname + "/public"));
 
