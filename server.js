@@ -8,7 +8,7 @@ var express = require('express'),
     url = 'mongodb://localhost:27017/simplemean',
     appInsights = require('applicationinsights');
 
-appInsights.setup().start();
+appInsights.setup().setAutoDependencyCorrelation(true).start();
 
 app.use(express.static(__dirname + "/public"));
 
